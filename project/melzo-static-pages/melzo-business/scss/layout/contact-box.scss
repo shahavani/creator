@@ -1,0 +1,43 @@
+.contact-box {
+  .contact-box--field {
+    display: flex;
+    flex-wrap: wrap;
+    &.two--coloumn {
+      .field-container {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+    }
+
+    .field-container {
+      margin-bottom: 2rem;
+      padding-right: 15px;
+
+      &.single-field {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    input,
+    textarea {
+      color: #757575;
+      @include placeholder {
+        color: #707070;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .contact-box {
+    .contact-box--field {
+      &.two--coloumn {
+        .field-container {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+}

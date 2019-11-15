@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* business-mlz */
+@font-face {
+  font-family: "business-mlz";
+  src:url("https://file.myfontastic.com/nV9H3WVzWLG8pUVZGJT3T7/fonts/1550567376.eot");
+  src:url("https://file.myfontastic.com/nV9H3WVzWLG8pUVZGJT3T7/fonts/1550567376.eot?#iefix") format("embedded-opentype"),
+    url("https://file.myfontastic.com/nV9H3WVzWLG8pUVZGJT3T7/fonts/1550567376.woff") format("woff"),
+    url("https://file.myfontastic.com/nV9H3WVzWLG8pUVZGJT3T7/fonts/1550567376.ttf") format("truetype"),
+    url("https://file.myfontastic.com/nV9H3WVzWLG8pUVZGJT3T7/fonts/1550567376.svg#1550567376") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "business-mlz" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="mlz-"]:before,
+[class*=" mlz-"]:before {
+  font-family: "business-mlz" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mlz-angle-right:before {
+  content: "\72";
+}
+.mlz-angle-left:before {
+  content: "\6c";
+}
+.mlz-address:before {
+  content: "\41";
+}
+.mlz-phone-call:before {
+  content: "\43";
+}
+.mlz-mail:before {
+  content: "\4d";
+}
+.mlz-instagram:before {
+  content: "\49";
+}
+.mlz-facebook:before {
+  content: "\46";
+}
+.mlz-twitter:before {
+  content: "\54";
+}
+.mlz-caret-down:before {
+  content: "\62";
+}
+.mlz-caret-up:before {
+  content: "\63";
+}
