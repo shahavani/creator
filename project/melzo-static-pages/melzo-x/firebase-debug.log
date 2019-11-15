@@ -1,0 +1,77 @@
+[debug] [2019-09-20T12:21:56.333Z] ----------------------------------------------------------------------
+[debug] [2019-09-20T12:21:56.335Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --debug
+[debug] [2019-09-20T12:21:56.335Z] CLI Version:   7.2.2
+[debug] [2019-09-20T12:21:56.335Z] Platform:      linux
+[debug] [2019-09-20T12:21:56.335Z] Node Version:  v10.16.1
+[debug] [2019-09-20T12:21:56.336Z] Time:          Fri Sep 20 2019 17:51:56 GMT+0530 (India Standard Time)
+[debug] [2019-09-20T12:21:56.336Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-20T12:21:56.340Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-20T12:21:56.340Z] > authorizing via signed-in user
+[debug] [2019-09-20T12:21:56.340Z] [iam] checking project melzox for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-09-20T12:21:56.341Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/melzox:testIamPermissions  
+
+[debug] [2019-09-20T12:21:58.076Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-20T12:21:58.080Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/melzox  
+ 
+[debug] [2019-09-20T12:21:58.531Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'melzox'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-09-20T12:21:58.538Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/melzox/versions  
+
+[debug] [2019-09-20T12:22:01.028Z] <<< HTTP RESPONSE 200
+[info] i  hosting[melzox]: beginning deploy...
+[info] i  hosting[melzox]: found 81 files in dist
+[debug] [2019-09-20T12:22:01.042Z] [hosting] hash cache [ZGlzdA] load error: lines is not defined
+[debug] [2019-09-20T12:22:01.229Z] [hosting] hash cache [ZGlzdA] stored for 81 files
+[debug] [2019-09-20T12:22:01.230Z] [hosting][hash queue][FINAL]
+[debug] [2019-09-20T12:22:01.230Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/melzox/versions/12be7f21365107c9:populateFiles  
+ <request body omitted>
+[info] i  hosting: adding files to version [0/81] (0%)
+[info] i  hosting: adding files to version [0/81] (0%)
+[debug] [2019-09-20T12:22:06.940Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-20T12:22:06.942Z] [hosting][populate queue][FINAL]
+[debug] [2019-09-20T12:22:06.943Z] [hosting] uploads queued: 0
+[debug] [2019-09-20T12:22:06.943Z] [hosting][upload queue][FINAL]
+[info] ✔  hosting[melzox]: file upload complete
+[debug] [2019-09-20T12:22:06.944Z] [hosting] deploy completed after 5914ms
+[debug] [2019-09-20T12:22:07.138Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "melzox"
+    },
+    "site": "melzox",
+    "version": "sites/melzox/versions/12be7f21365107c9"
+  }
+]
+[info] i  hosting[melzox]: finalizing version...
+[debug] [2019-09-20T12:22:07.139Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/melzox/versions/12be7f21365107c9?updateMask=status  
+
+[debug] [2019-09-20T12:22:09.028Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-20T12:22:09.029Z] [hosting] finalized version for melzox:
+[info] ✔  hosting[melzox]: version finalized
+[info] i  hosting[melzox]: releasing new version...
+[debug] [2019-09-20T12:22:09.031Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/melzox/releases?version_name=sites/melzox/versions/12be7f21365107c9  
+
+[debug] [2019-09-20T12:22:10.927Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-20T12:22:10.928Z] [hosting] release:
+[info] ✔  hosting[melzox]: release complete
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/melzox/overview
+[info] Hosting URL: https://melzox.firebaseapp.com

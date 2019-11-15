@@ -1,0 +1,34 @@
+{
+  "name": "melzo-static-pages",
+  "version": "1.0.0",
+  "description": "Business melzo",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "nodemoduler": "^1.0.6",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^4.4.6",
+    "webp-converter": "^2.2.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-lazy": "0.0.4",
+    "sass": "^1.17.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf dist/",
+    "dev": "npm run prebuild && parcel *.html",
+    "prod": "npm run prebuild && parcel build *.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/formatkaka/melzo-static-pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/formatkaka/melzo-static-pages/issues"
+  },
+  "homepage": "https://github.com/formatkaka/melzo-static-pages#readme"
+}

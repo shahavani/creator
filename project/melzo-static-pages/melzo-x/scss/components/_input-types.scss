@@ -1,0 +1,46 @@
+﻿input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea {
+  border: none;
+  color: #757575;
+  padding: 5px 20px;
+  font-size: 16px;
+  resize: none;
+  font-family: $business-secondary-font;
+  background: transparent;
+  box-shadow: none;
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &:-internal-autofill-selected {
+    color: $brand-color;
+  }
+}
+
+input[type="email"]:valid {
+  // border-color: black;
+}
+
+input[type="email"]:invalid {
+  // border-color: red;
+}
+
+.label-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@include placeholder {
+  color: #707070;
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: $business-secondary-font;
+}

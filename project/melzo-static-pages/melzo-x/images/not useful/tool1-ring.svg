@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.05 202.45">
+  <defs>
+    <style>
+      .cls-1{fill:#fff}
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <ellipse class="cls-1" cx="97.09" cy="103.66" rx="97.09" ry="93.79"/>
+      <path d="M97.09 9.86c52.07 0 94.28 41.21 94.28 92s-42.21 92-94.28 92-94.28-41.21-94.28-92 42.19-92 94.28-92z" style="isolation:isolate" fill="#ff8a65" opacity=".3"/>
+      <ellipse cx="98.09" cy="97.12" rx="85.55" ry="87.29" style="isolation:isolate" opacity=".56" fill="#ff0"/>
+      <ellipse cx="97.62" cy="99.68" rx="81.07" ry="77.32" style="isolation:isolate" opacity=".33" fill="#e65100"/>
+      <ellipse cx="87.76" cy="102.05" rx="81.07" ry="77.32" style="isolation:isolate" fill="#ffffc9" opacity=".33"/>
+      <ellipse cx="102.74" cy="110.32" rx="81.07" ry="77.32" style="isolation:isolate" opacity=".33" fill="#ff0"/>
+      <path d="M98.92 0c53.08 0 96.13 45.32 96.13 101.22S152 202.45 98.92 202.45 2.8 157.13 2.8 101.22 45.83 0 98.92 0z" style="isolation:isolate" fill="#ffc500" opacity=".33"/>
+      <circle class="cls-1" cx="97.7" cy="103.51" r="78.83"/>
+    </g>
+  </g>
+</svg>
