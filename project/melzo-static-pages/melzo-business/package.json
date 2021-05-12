@@ -7,7 +7,7 @@
     "jquery": "^2.2.4",
     "nodemoduler": "^1.0.6",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.4.6",
+    "swiper": "^6.5.1",
     "webp-converter": "^2.2.2"
   },
   "devDependencies": {
